@@ -1,0 +1,32 @@
+body {
+  padding: 0;
+  margin: 0; }
+
+li {
+  margin: 0 15px 0 15px;
+  color: #494e62; }
+  li:first-child {
+    list-style-type: none; }
+  li span {
+    color: #ffffff; }
+    li span:hover {
+      color: #f06c64;
+      cursor: pointer; }
+
+.page {
+  flex-direction: column; }
+  .page .page, .page__headerContent, .page__buttonLine, .page__navigation, .page__ul, .page__logo {
+    display: flex; }
+  .page__headerContent {
+    justify-content: space-between;
+    padding: 35px 40px 35px 40px; }
+  .page__header {
+    background-image: url("../images/HeaderBG.png"); }
+  .page__navigation {
+    flex-direction: column; }
+  .page__logo {
+    align-items: center; }
+  .page__main {
+    background-color: #f06c64; }
+
+/*# sourceMappingURL=style.css.map */
