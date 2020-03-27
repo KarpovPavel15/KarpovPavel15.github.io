@@ -15,8 +15,20 @@ li {
 
 .page {
   flex-direction: column; }
-  .page .page, .page__headerContent, .page__buttonLine, .page__navigation, .page__ul, .page__logo {
+  .page .page, .page__headerContent, .page__buttonLine, .page__navigation, .page__ul, .page__logo, .page__slider, .page__sliderContent, .page__sliderArea {
     display: flex; }
+  .page__sliderContent {
+    align-items: center;
+    width: 100%;
+    justify-content: space-around; }
+  .page__sliderArea {
+    align-items: center;
+    padding: 50px 40px 90px 40px;
+    background-color: #f06c64; }
+  .page__prevBtn {
+    margin-right: 50px; }
+  .page__nextBtn {
+    margin-left: 50px; }
   .page__headerContent {
     justify-content: space-between;
     padding: 35px 40px 35px 40px; }
@@ -26,7 +38,8 @@ li {
     flex-direction: column; }
   .page__logo {
     align-items: center; }
-  .page__main {
-    background-color: #f06c64; }
+  .page__sliderBottomBorder {
+    background-color: #ea676b;
+    height: 6px; }
 
 /*# sourceMappingURL=style.css.map */

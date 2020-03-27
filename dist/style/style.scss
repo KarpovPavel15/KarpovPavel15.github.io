@@ -25,8 +25,28 @@ li {
 .page {
   flex-direction: column;
 
-  .page,&__headerContent, &__buttonLine, &__navigation, &__ul, &__logo {
+  .page, &__headerContent, &__buttonLine, &__navigation, &__ul, &__logo, &__slider, &__sliderContent, &__sliderArea {
     display: flex;
+  }
+
+  &__sliderContent {
+    align-items: center;
+    width: 100%;
+    justify-content: space-around;
+  }
+
+  &__sliderArea{
+    align-items: center;
+    padding: 50px 40px 90px 40px;
+    background-color: #f06c64;
+  }
+
+  &__prevBtn {
+    margin-right: 50px;
+  }
+
+  &__nextBtn {
+    margin-left: 50px;
   }
 
   &__headerContent {
@@ -46,7 +66,8 @@ li {
     align-items: center;
   }
 
-  &__main {
-    background-color: #f06c64;
+  &__sliderBottomBorder{
+    background-color: #ea676b;
+    height: 6px;
   }
 }
