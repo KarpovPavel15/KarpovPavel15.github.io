@@ -5,18 +5,57 @@ body {
 li {
   margin: 0 15px 0 15px;
   color: #494e62; }
-  li:first-child {
-    list-style-type: none; }
+  li:first-of-type {
+    list-style-type: none;
+    margin: 0 15px 0 0; }
+  li:last-of-type {
+    margin: 0 0 0 15px; }
   li span {
     color: #ffffff; }
     li span:hover {
       color: #f06c64;
       cursor: pointer; }
 
+p {
+  color: #a8acc0; }
+
+h1 {
+  font-size: 30px;
+  color: #666d89; }
+
+h3 {
+  color: #a8acc0; }
+
+article {
+  margin-bottom: 50px; }
+
 .page {
   flex-direction: column; }
-  .page .page, .page__headerContent, .page__buttonLine, .page__navigation, .page__ul, .page__logo {
+  .page .page, .page__headerContent, .page__headerButtonLine, .page__navigation, .page__ul, .page__logo, .page__slider, .page__sliderContent, .page__sliderArea, .page__advantages, .page__advantagesFirstLine, .page__advantagesSecondLine, .page__advantage {
     display: flex; }
+  .page__sliderContent {
+    align-items: center;
+    width: 100%;
+    justify-content: space-around; }
+  .page__sliderArea {
+    align-items: center;
+    padding: 50px 40px 90px 40px;
+    background-color: #f06c64; }
+  .page__prevBtn {
+    margin-right: 25px; }
+  .page__prevBtn, .page__nextBtn {
+    border: none;
+    background: none;
+    cursor: pointer; }
+    .page__prevBtn:focus, .page__nextBtn:focus {
+      outline: none; }
+    .page__prevBtn:hover path, .page__nextBtn:hover path {
+      fill-opacity: 0;
+      fill: #f00;
+      stroke: #f00;
+      transition: all 0.4s linear; }
+  .page__nextBtn {
+    margin-left: 50px; }
   .page__headerContent {
     justify-content: space-between;
     padding: 35px 40px 35px 40px; }
@@ -26,7 +65,29 @@ li {
     flex-direction: column; }
   .page__logo {
     align-items: center; }
-  .page__main {
-    background-color: #f06c64; }
+  .page__sliderBottomBorder {
+    background-color: #ea676b;
+    height: 6px; }
+  .page__servicesButtonLine {
+    background-color: #ffffff;
+    height: 6px; }
+  .page__services {
+    padding: 60px 40px 60px 40px;
+    background-color: #f2f2f2; }
+  .page__advantages {
+    flex-direction: column; }
+  .page__advantagesFirstLine, .page__advantagesSecondLine {
+    justify-content: space-between; }
+  .page__advantage {
+    align-items: end; }
+  .page__advantageImage {
+    margin: 0 20px 0 20px; }
+  .page__advantageName {
+    font-size: 20px;
+    color: #666d89; }
+  .page__advantagesFirstLine {
+    margin-bottom: 20px; }
+  .page__advantagesSecondLine {
+    margin-top: 20px; }
 
 /*# sourceMappingURL=style.css.map */
