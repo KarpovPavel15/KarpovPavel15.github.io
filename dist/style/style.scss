@@ -7,8 +7,13 @@ li {
   margin: 0 15px 0 15px;
   color: #494e62;
 
-  &:first-child {
+  &:first-of-type {
     list-style-type: none;
+    margin: 0 15px 0 0;
+  }
+
+  &:last-of-type {
+    margin: 0 0 0 15px;
   }
 
   span {
@@ -20,12 +25,42 @@ li {
     }
 
   }
+
+}
+
+p {
+  color: #a8acc0
+}
+
+h1 {
+  font-size: 30px;
+  color: #666d89
+}
+
+h3 {
+  color: #a8acc0
+}
+
+article {
+  margin-bottom: 50px;
 }
 
 .page {
   flex-direction: column;
 
-  .page, &__headerContent, &__buttonLine, &__navigation, &__ul, &__logo, &__slider, &__sliderContent, &__sliderArea {
+  .page,
+  &__headerContent,
+  &__headerButtonLine,
+  &__navigation,
+  &__ul,
+  &__logo,
+  &__slider,
+  &__sliderContent,
+  &__sliderArea,
+  &__advantages,
+  &__advantagesFirstLine,
+  &__advantagesSecondLine,
+  &__advantage {
     display: flex;
   }
 
@@ -35,14 +70,33 @@ li {
     justify-content: space-around;
   }
 
-  &__sliderArea{
+  &__sliderArea {
     align-items: center;
     padding: 50px 40px 90px 40px;
     background-color: #f06c64;
   }
 
   &__prevBtn {
-    margin-right: 50px;
+    margin-right: 25px;
+  }
+
+  &__prevBtn, &__nextBtn {
+    border: none;
+    background: none;
+    cursor: pointer;
+
+    &:focus {
+      outline: none;
+    }
+
+    &:hover {
+      path {
+        fill-opacity: 0;
+        fill: #f00;
+        stroke: #f00;
+        transition: all 0.4s linear;
+      }
+    }
   }
 
   &__nextBtn {
@@ -66,8 +120,48 @@ li {
     align-items: center;
   }
 
-  &__sliderBottomBorder{
+  &__sliderBottomBorder {
     background-color: #ea676b;
     height: 6px;
+  }
+
+  &__servicesButtonLine {
+    background-color: #ffffff;
+    height: 6px;
+  }
+
+  &__services {
+    padding: 60px 40px 60px 40px;
+    background-color: #f2f2f2;
+  }
+
+  &__advantages {
+    flex-direction: column;
+  }
+
+  &__advantagesFirstLine,
+  &__advantagesSecondLine {
+    justify-content: space-between;
+  }
+
+  &__advantage {
+    align-items: end;
+  }
+
+  &__advantageImage {
+    margin: 0 20px 0 20px;
+  }
+
+  &__advantageName {
+    font-size: 20px;
+    color: #666d89
+  }
+
+  &__advantagesFirstLine {
+    margin-bottom: 20px;
+  }
+
+  &__advantagesSecondLine {
+    margin-top: 20px;
   }
 }
