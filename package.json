@@ -1,0 +1,19 @@
+{
+  "name": "rolling-scopes-school",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KarpovPavel15/rolling-scopes-school.git"
+  },
+  "author": "KPV",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KarpovPavel15/rolling-scopes-school/issues"
+  },
+  "homepage": "https://github.com/KarpovPavel15/rolling-scopes-school#readme"
+}
