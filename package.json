@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "npm test"
+    "scss": "node-sass -watch dist/style/style.scss -o dist/style/style.css",
+    "testing": "npm test",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
@@ -15,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/KarpovPavel15/rolling-scopes-school/issues"
   },
-  "homepage": "https://github.com/KarpovPavel15/rolling-scopes-school#readme"
+  "homepage": "https://github.com/KarpovPavel15/rolling-scopes-school#readme",
+  "dependencies": {
+    "node-sass": "^4.13.1"
+  }
 }

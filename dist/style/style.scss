@@ -45,11 +45,6 @@ article {
   margin-bottom: 50px;
 }
 
-footer {
-  background-color: #ffffff;
-  height: 6px;
-}
-
 .page {
   display: flex;
   flex-direction: column;
@@ -120,15 +115,31 @@ footer {
     background-color: #f06c64;
   }
 
+  &__slider-divider {
+    background-color: #ea676b;
+  }
+
+  &__services-divider {
+    background-color: #ffffff;
+  }
+
+  &__contact-divider {
+    background-color: #ea676b;
+  }
+
+  &__portfolio-divider {
+    background-color: #323746;
+  }
+
+  &__about-us-divider {
+    background-color: #ffffff;
+  }
+
   &__slider-content {
     display: flex;
     align-items: center;
     width: 100%;
     justify-content: space-around;
-  }
-
-  &__divider {
-    background-color: #ea676b;
   }
 
   &__services {
@@ -142,9 +153,34 @@ footer {
   }
 }
 
-.navigation{
-  &__ul{
+.navigation {
+  &__ul {
     display: flex;
+  }
+
+  &__headerBtn {
+    font-size: 15px;
+    border-radius: 7px;
+    color: #666d89;
+    border: 2px solid #666d89;
+    margin: 0 5px 0 5px;
+    height: 30px;
+    background-color: transparent;
+
+    &:hover, &:focus {
+      border-color: #ffffff;
+      cursor: pointer;
+      color: #ffffff;
+      outline: none;
+    }
+  }
+
+  &:first-child {
+    margin: 0 5px 0 0;
+  }
+
+  &:last-child {
+    margin: 0 0 0 5px;
   }
 }
 
@@ -180,3 +216,208 @@ footer {
   }
 }
 
+.portfolio {
+  background-image: url("../images/Bg.png");
+  padding: 55px 40px 70px 40px;
+
+  &__title, &__text {
+    color: #666d89;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__navigation {
+    display: flex;
+    margin-bottom: 20px;
+  }
+
+  &__firstLine, &__secondLine, &__thirdLine {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__work {
+    margin: 5px;
+
+    &:first-child {
+      margin: 5px 10px 5px 0;
+    }
+
+    &:last-child {
+      margin: 5px 0 5px 10px;
+    }
+  }
+}
+
+.about-us {
+  padding: 55px 40px 70px 40px;
+
+  &__title, &__text {
+    color: #666d89;
+  }
+
+  &__workers {
+    display: flex;
+    margin-top: 55px;
+    justify-content: space-between;
+  }
+}
+
+.worker {
+
+  &:first-child {
+    padding: 0 10px 0 0;
+  }
+
+  &:last-child {
+    padding: 0 0 0 10px;
+  }
+
+  &__description {
+    margin-bottom: 30px;
+  }
+}
+
+.contact {
+  padding: 70px 40px 70px 40px;
+  background-color: #f06c64;
+
+  &__address, &__phone, &__mail {
+    font-size: 12px;
+    line-height: 22px;
+    color: #f0d8d9;
+  }
+
+  &__address {
+    margin-left: 21px;
+  }
+
+  &__phone {
+    margin-left: 17px;
+  }
+
+  &__mail {
+    margin-left: 15px;
+  }
+
+  &__feedback-links {
+    margin-bottom: 10px;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    width: 58%;
+    margin-right: 2%;
+  }
+
+  &__information {
+    width: 38%;
+    margin-left: 2%;
+  }
+
+  &__information-title {
+    font-size: 18px;
+    line-height: 18px;
+    color: #f0d8d9;
+    font-weight: 900;
+  }
+
+  &__information-description {
+    font-size: 12px;
+    line-height: 22px;
+    color: #f0d8d9;
+  }
+
+  &__feedback {
+    display: flex;
+  }
+}
+
+@mixin placeholder {
+  ::-webkit-input-placeholder {
+    @content
+  }
+  :-moz-placeholder {
+    @content
+  }
+  ::-moz-placeholder {
+    @content
+  }
+  :-ms-input-placeholder {
+    @content
+  }
+}
+
+@include placeholder {
+  color: #d67475;
+}
+
+.form {
+  &__input {
+    width: 100%;
+    padding: 15px 0 15px 15px;
+    background-color: #d6564f;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+  }
+
+  &__name, &__email {
+    input:invalid {
+      border-color: red;
+    }
+
+    input:valid {
+      border-color: green;
+    }
+
+  }
+
+  &__submit-area {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__submit {
+    background: -moz-linear-gradient(#666d89, #EBFFFF);
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#666d89));
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00BBD6', endColorstr='#EBFFFF');
+    padding: 3px 7px;
+    width: 200px;
+    height: 35px;
+    color: #333;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    border: 1px solid #666;
+  }
+
+  &__describe-area {
+    height: 200px;
+  }
+
+  &__label {
+    width: 100%;
+    overflow-x: hidden;
+    margin-bottom: 15px;
+    border-radius: 5px;
+  }
+}
+
+.footer {
+  display: flex;
+  height: 75px;
+  background-color: #2d303a;
+  &__info{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px 0 40px;
+  }
+}
