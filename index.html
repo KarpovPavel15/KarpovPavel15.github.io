@@ -6,19 +6,19 @@
     <link rel="stylesheet" href="dist/style/style.css">
 </head>
 <body>
-<div class="page">
+<div class="page" id="page">
     <header class="header">
         <div class="header__content">
             <div class="logo">
                 <img src="dist/images/SINGOLO.png" alt="logo"/>
             </div>
             <nav class="navigation header__navigation ">
-                <ul class="navigation__ul">
-                    <li><span>HOME</span></li>
-                    <li><span>SERVICES</span></li>
-                    <li><span>PORTFOLIO</span></li>
-                    <li><span>ABOUT</span></li>
-                    <li><span>CONTACT</span></li>
+                <ul class="ul navigation__ul">
+                    <li><a href="#page">HOME</a></li>
+                    <li><a href="#services">SERVICES</a></li>
+                    <li><a href="#portfolio">PORTFOLIO</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
                 </ul>
             </nav>
         </div>
@@ -27,36 +27,19 @@
     <main class="main">
         <section class="slider main__slider">
             <button class="slider__prevBtn" onclick="">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 27" width="16" height="27">
-                    <defs>
-                        <image width="16" height="27" id="img1"
-                               href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAbCAMAAABC6v+QAAAAAXNSR0IB2cksfwAAAMlQTFRFykVJykVJykVJykVJykVJykVJykVJykVJykVJykVJykVJykVJykVJykVJykVJykVJykVJykVJykVJykVJykVJykVJykVJykVJykVJykVJykVJykVJykVJykVJykVJykVJykVJykVJykVJykVJykVJykVJykVJykVJykVJykVJykVJykVJykVJykVJykVJykVJykVJykVJykVJykVJykVJykVJykVJykVJykVJykVJykVJykVJykVJykVJykVJykVJykVJykVJykVJAVNDlAAAAEN0Uk5TAAJ7zshkof9QjJ+Jd4XGEnLUF3PYI9ckW/rnLFj86DVH9DZC8fND0+pL94/KMUHyPExc5l374iVu2dUWdZqLarmxUxKgJpYAAACrSURBVHicVdBXFoJADEDRiCL2rgiigr333nX/i1KSkMH83XfOQGYAZCJaNKZDaOLGbxLKSd9GSpxGG5nAWXIuzy6QiyV2mVypsnVyzWTXLbTdYDtNdKvNdj1yh93tofuDYIEhejSWDScYpuoKMwyeI2FuU1FnFvTVpSou/2clZW39bwKwobJVZbfHcjhKOdF9z6YUfpHLVcqNiqZWple+qwAPP7ihAM/X+wNfzR4Ol+GNQX8AAAAASUVORK5CYII="/>
-                    </defs>
-                    <style>
-                        tspan {
-                            white-space: pre
-                        }
-                    </style>
-                    <g id="Slider">
-                        <use id="chev" href="#img1" x="0" y="0"/>
-                    </g>
-                </svg>
+                <img src="dist/images/prev.svg"/>
             </button>
             <div class="main__slider-content">
                 <img src="dist/images/iPhoneVertical.png">
                 <img src="dist/images/iPhoneHorizontal.png">
             </div>
             <button class="slider__nextBtn" onclick="">
-                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16"
-                     height="27" viewBox="0 0 16 27">
-                    <image id="chev2.png" width="16" height="27"
-                           xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAbCAYAAAB1NA+iAAABg0lEQVQ4jY3VT4hOURjH8Q9mpEaWZCGbYWFnY2WlJI2YqSFRlD/ZG1H2kpmxYDGbsdGMZpooisUsJks1FhYoij0pC82OpEfnrbe3+5x7f3U353d+33vOee59zqb1o8fhSnm24hnu4q8OGsI45vumHsR+XOwC2IxTDeMXMNsV8CnxpnCvCyCW/ybxb+JOG+AnJvAxmXMb12uA0PdyFp+TeffLllJA6CtOVM5ktpQ6BYS+4DS+JZA5nK8BQh9wsmxrUMN4jLM1QOhtBbIFj3CsBgitl+VuNHgjWMGRGiC0Vpb7o8HbgQdtgNArPEm80S6AWMHVxHvfBhgrBzbS4EWpr9UAEV5Kwr9wDu+GkvBhLGN7Ej6D15IyHsLTJPy7lHa1NzAIiPBz7ErCl/Cyf7AfsK+8eXdD+A8uY3HQ6AFGC3lPQ1j5lReajADsxIvSSJt0Aw8T7z8gPpIDiR8tLZpJqgDsTdxpzNTCPUBcJIOK7nOrLRyKDylqOlnugm3lPKLztAv/AAFNQs/joGZ7AAAAAElFTkSuQmCC"/>
-                </svg>
+                <img src="dist/images/next.svg"/>
             </button>
         </section>
         <div class="divider main__slider-divider"></div>
-        <section class="main__services">
-            <article>
+        <section class="main__services" id="services">
+            <article class="main__service-article">
                 <h1>OUR SERVICES</h1>
                 <h3>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus,
                     nisi erat porttitor
@@ -132,7 +115,7 @@
             </section>
         </section>
         <div class="divider main__services-divider"></div>
-        <section class="portfolio">
+        <section class="portfolio" id="portfolio">
             <article>
                 <h1 class="portfolio__title">Portfolio</h1>
                 <h3 class="portfolio__text">Duis mollis, est non commodo luctus, nisi erat porttitor ligula eget lacinia
@@ -168,8 +151,8 @@
 
         </section>
         <div class="divider main__portfolio-divider"></div>
-        <section class="about-us">
-            <h2 class="about-us__title">About us</h2>
+        <section class="about-us" id="about">
+            <h1 class="about-us__title">About us</h1>
             <h3 class="about-us__text">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimen est non commodo
                 luctus, nisi erat porttitor ligula eget lacinia
                 odio sem nec </h3>
@@ -234,14 +217,15 @@
             </div>
         </section>
         <div class="divider main__about-us-divider"></div>
-        <section class="contact">
+        <section class="contact" id="contact">
             <article>
-                <h2>Get a Quote</h2>
-                <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimen Fusce dapibus, tellus ac cursus
+                <h1 class="contact__title">Get a Quote</h1>
+                <p class="contact__description"> Fusce dapibus, tellus ac cursus commodo, tortor mauris condimen Fusce
+                    dapibus, tellus ac cursus
                     commodo, tortor mauris condimen Fusce dapibus, tellus ac cursus commodo, tortor mauris condimenL</p>
             </article>
             <section class="contact__feedback">
-                <form class="form contact__form">
+                <form class="form contact__form" method="post">
                     <label class="form__label">
                         <input class="form__input form_name" type="text" placeholder="Name (Required)" required>
                     </label>
@@ -288,7 +272,7 @@
     </main>
     <footer class="footer">
         <div class="footer__info">
-            <div>© Copyright 2013</div>
+            <div class="footer__copyright">© Copyright 2013</div>
             <nav class="navigation">
                 <a class="navigation__our-network" href="https://www.facebook.com"><img
                         src="dist/images/Facebook.png"/></a>
