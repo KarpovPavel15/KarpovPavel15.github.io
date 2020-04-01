@@ -4,14 +4,15 @@
     <meta charset="UTF-8">
     <title>1234566</title>
     <link rel="stylesheet" href="dist/style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 <div class="page" id="page">
     <header class="header">
         <div class="header__content">
-            <div class="logo">
+            <a href="#page" class="logo">
                 <img src="dist/images/SINGOLO.png" alt="logo"/>
-            </div>
+            </a>
             <nav class="navigation header__navigation ">
                 <ul class="ul navigation__ul">
                     <li><a href="#page">HOME</a></li>
@@ -21,6 +22,18 @@
                     <li><a href="#contact">CONTACT</a></li>
                 </ul>
             </nav>
+            <div class="hamburger header__hamburger">
+                <a href="javascript:void(0);" class="hamburger__icon" onclick="hamburgerHandler()">
+                    <i class="fa fa-bars"></i>
+                </a>
+                <div id="hamburger__links">
+                    <a href="#page">HOME</a>
+                    <a href="#services">SERVICES</a>
+                    <a href="#portfolio">PORTFOLIO</a>
+                    <a href="#about">ABOUT</a>
+                    <a href="#contact">CONTACT</a>
+                </div>
+            </div>
         </div>
         <div class="divider header__divider"></div>
     </header>
@@ -41,7 +54,8 @@
         <section class="main__services" id="services">
             <article class="main__service-article">
                 <h1>OUR SERVICES</h1>
-                <h3>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus,
+                <h3 class="main__service-article-description">Fusce dapibus, tellus ac cursus commodo, tortor mauris
+                    condimentum. Duis mollis, non commodo luctus,
                     nisi erat porttitor
                     ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris
                     condimentum nibh.
@@ -257,7 +271,7 @@
                             <a class="contact__address"> Elm St. 14/05 Lost City </a>
                         </div>
                         <div class="contact__feedback-links">
-                            <img src="dist/images/phone.png"/>
+                            <img src="dist/images/phoneFooter.png"/>
                             <a href="tel:03528 331 86 35" class="contact__phone"> 03528 331 86 35 </a>
                         </div>
                         <div class="contact__feedback-links">
@@ -286,5 +300,15 @@
         </div>
     </footer>
 </div>
+<script>
+    function hamburgerHandler() {
+        let x = document.getElementById("hamburger__links");
+        if (x.style.display === "block") {
+            x.style.display = "none";
+        } else {
+            x.style.display = "block";
+        }
+    }
+</script>
 </body>
 </html>
