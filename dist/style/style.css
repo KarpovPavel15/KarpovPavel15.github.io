@@ -10,12 +10,16 @@ li {
     margin: 0 15px 0 0; }
   li:last-of-type {
     margin: 0 0 0 15px; }
-  li a {
-    color: #ffffff;
-    text-decoration: none; }
-    li a:hover {
-      color: #f06c64;
-      cursor: pointer; }
+
+.navigation__link, .hamburger__link {
+  color: #ffffff;
+  text-decoration: none; }
+  .navigation__link:hover, .navigation__link:focus, .hamburger__link:hover, .hamburger__link:focus {
+    color: #f06c64;
+    cursor: pointer; }
+
+.active {
+  color: #f06c64; }
 
 p {
   color: #a8acc0; }

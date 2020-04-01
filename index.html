@@ -15,11 +15,11 @@
             </a>
             <nav class="navigation header__navigation ">
                 <ul class="ul navigation__ul">
-                    <li><a href="#page">HOME</a></li>
-                    <li><a href="#services">SERVICES</a></li>
-                    <li><a href="#portfolio">PORTFOLIO</a></li>
-                    <li><a href="#about">ABOUT</a></li>
-                    <li><a href="#contact">CONTACT</a></li>
+                    <li><a class="navigation__link active" href="#page">HOME</a></li>
+                    <li><a class="navigation__link" href="#services">SERVICES</a></li>
+                    <li><a class="navigation__link" href="#portfolio">PORTFOLIO</a></li>
+                    <li><a class="navigation__link" href="#about">ABOUT</a></li>
+                    <li><a class="navigation__link" href="#contact">CONTACT</a></li>
                 </ul>
             </nav>
             <div class="hamburger header__hamburger">
@@ -27,11 +27,11 @@
                     <i class="fa fa-bars"></i>
                 </a>
                 <div id="hamburger__links">
-                    <a href="#page">HOME</a>
-                    <a href="#services">SERVICES</a>
-                    <a href="#portfolio">PORTFOLIO</a>
-                    <a href="#about">ABOUT</a>
-                    <a href="#contact">CONTACT</a>
+                    <a class="hamburger__link" href="#page">HOME</a>
+                    <a class="hamburger__link" href="#services">SERVICES</a>
+                    <a class="hamburger__link" href="#portfolio">PORTFOLIO</a>
+                    <a class="hamburger__link" href="#about">ABOUT</a>
+                    <a class="hamburger__link" href="#contact">CONTACT</a>
                 </div>
             </div>
         </div>
@@ -300,15 +300,6 @@
         </div>
     </footer>
 </div>
-<script>
-    function hamburgerHandler() {
-        let x = document.getElementById("hamburger__links");
-        if (x.style.display === "block") {
-            x.style.display = "none";
-        } else {
-            x.style.display = "block";
-        }
-    }
-</script>
+<script src="dist/script/index.js"></script>
 </body>
 </html>
