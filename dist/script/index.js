@@ -23,38 +23,36 @@ let onClick = function (event) {
     }
 
     event.currentTarget.classList.add('active');
-
-    for (let item of menuItems) {
-        item.addEventListener('click', function (e) {
-            e.preventDefault();
-
-            const blockID = item.getAttribute('href').substr(1);
-
-            document.getElementById(blockID).scrollIntoView({
-                behavior: 'smooth',
-                block: 'start'
-            })
-        })
-    }
-    for (let item of humbItems) {
-        item.addEventListener('click', function (e) {
-            e.preventDefault();
-
-            const blockID = item.getAttribute('href').substr(1);
-
-            document.getElementById(blockID).scrollIntoView({
-                behavior: 'smooth',
-                block: 'start'
-            })
-        })
-    }
 };
 
+for (let item of menuItems) {
+    item.addEventListener("click", function () {
+
+        const blockID = item.getAttribute('href').substr(1);
+
+        document.getElementById(blockID).scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+        })
+    })
+}
+for (let item of humbItems) {
+    item.addEventListener("click", function (e) {
+        e.preventDefault();
+
+        const blockID = item.getAttribute('href').substr(1);
+
+        document.getElementById(blockID).scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+        })
+    })
+}
+
 for (let i = 0; i < menuItems.length; i++) {
-    menuItems[i].addEventListener('click', onClick, false);
+    menuItems[i].addEventListener("click", onClick);
 }
 for (let i = 0; i < humbItems.length; i++) {
-    humbItems[i].addEventListener('click', onClick, false);
+    humbItems[i].addEventListener("click", onClick);
 }
-//
 
