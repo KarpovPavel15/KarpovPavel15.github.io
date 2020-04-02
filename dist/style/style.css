@@ -115,7 +115,7 @@ h3 {
   justify-content: space-around; }
 
 .main__services {
-  padding: 65px 40px 65px 40px;
+  padding: 49px 40px 65px 40px;
   background-color: #f2f2f2; }
 
 .main__advantages {
@@ -169,7 +169,7 @@ h3 {
 
 .portfolio {
   background-image: url("../images/Bg.png");
-  padding: 55px 40px 70px 40px; }
+  padding: 39px 40px 70px 40px; }
   .portfolio__title, .portfolio__text {
     color: #666d89; }
   .portfolio__text {
@@ -193,7 +193,7 @@ h3 {
       margin: 5px 0 5px 10px; }
 
 .about-us {
-  padding: 55px 40px 70px 40px; }
+  padding: 39px 40px 70px 40px; }
   .about-us__title {
     color: #666d89; }
   .about-us__text {
@@ -220,7 +220,7 @@ h3 {
   font-size: 18px; }
 
 .contact {
-  padding: 70px 40px 70px 40px;
+  padding: 54px 40px 70px 40px;
   background-color: #f06c64; }
   .contact__address, .contact__phone, .contact__mail {
     font-size: 12px;
@@ -355,7 +355,7 @@ h3 {
   .portfolio__text, .about-us__text, .contact__description, .main__service-article-description {
     font-size: 13px; } }
 
-@media screen and (max-device-width: 700px) {
+@media screen and (max-device-width: 768px) {
   .hamburger, .header__hamburger {
     overflow: visible;
     display: block;
@@ -367,4 +367,63 @@ h3 {
     width: 200px;
     display: none; }
   .worker__navigation-networks {
-    margin-top: 50px; } }
+    margin-top: 50px; }
+  .main__advantages {
+    display: flex;
+    flex-direction: row; }
+  .advantages__first-line, .advantages__second-line {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; }
+  .advantages__second-line {
+    margin-top: 0;
+    margin-left: 20px; }
+  .advantages__first-line {
+    margin-bottom: 0;
+    margin-right: 20px; }
+  .advantages__advantage {
+    display: flex;
+    align-items: end;
+    margin-bottom: 15px; }
+  .portfolio__content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; }
+  .portfolio__firstLine, .portfolio__secondLine, .portfolio__thirdLine {
+    display: flex;
+    flex-direction: column; }
+  .portfolio__work:first-child {
+    margin: 0 10px 10px 0; }
+  .portfolio__work {
+    margin: 10px 10px 10px 0; }
+  .portfolio__work:last-child {
+    margin: 10px 10px 0 0; } }
+
+@media screen and (max-device-width: 375px) {
+  .main__advantages {
+    display: flex;
+    flex-direction: column; }
+  .advantages__first-line {
+    margin-bottom: 0;
+    margin-right: 0; }
+  .advantages__second-line {
+    margin-top: 0;
+    margin-left: 0; }
+  .about-us__workers {
+    display: flex;
+    margin-top: 55px;
+    flex-direction: column;
+    justify-content: space-between; }
+  .contact__feedback {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px; }
+  .contact__information {
+    margin-top: 50px;
+    width: 38%; }
+  .worker:first-child {
+    margin-bottom: 100px; }
+  .worker {
+    margin-bottom: 100px; }
+  .worker:last-child {
+    padding: 0; } }
